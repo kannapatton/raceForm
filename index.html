@@ -8,25 +8,28 @@
   <body>
     <h1>Race Registration!</h1>
     <form action="/registration">
-      <label for="first">First Name:</label>
-      <input type="text" name="firstname" id="first" />
-      <label for="last">Last Name:</label>
-      <input type="text" name="lastname" id="last" />
+      <div>
+        <label for="first">First Name:</label>
+        <input type="text" name="firstname" id="first" />
+        <label for="last">Last Name:</label>
+        <input type="text" name="lastname" id="last" />
+      </div>
       <p>
         Select a Race:
-        <br />
-        <br />
+        <div>
         <!-- id and label the same connects the label to the radio button
         having the same name will connect all 3 radios so that only 1 may be chosen -->
         <input type="radio" name="race" id="funRun" />
         <label for="funRun">Fun Run 5k</label>
-        <br />
+    </div>
+    <div>
         <input type="radio" name="race" id="half" />
         <label for="half">Half Marathon</label>
-        <br />
+    </div>
+    <div>
         <input type="radio" name="race" id="full" />
         <label for="full">Full Marathon</label>
-        <br />
+    </div>
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" />
         <label for="pass">Password:</label>
