@@ -10,41 +10,42 @@
     <form action="/registration">
       <div>
         <label for="first">First Name:</label>
-        <input type="text" name="firstname" id="first" />
+        <input type="text" name="firstname" id="first" required />
         <label for="last">Last Name:</label>
-        <input type="text" name="lastname" id="last" />
+        <input type="text" name="lastname" id="last" required />
       </div>
-      <p>
-        Select a Race:
-        <div>
+      <p>Select a Race:</p>
+      <div>
         <!-- id and label the same connects the label to the radio button
         having the same name will connect all 3 radios so that only 1 may be chosen 
     ALSO IMPORTANT, WE MUST SET THE VALUE SO THAT IT IS SENT TO A SERVER (HYPOTHETICALLY)-->
         <input type="radio" name="race" id="funRun" value="funRun" />
         <label for="funRun">Fun Run 5k</label>
-    </div>
-    <div>
+      </div>
+      <div>
         <input type="radio" name="race" id="half" value="half" />
         <label for="half">Half Marathon</label>
-    </div>
-    <div>
-        <input type="radio" name="race" id="full" value="full"/>
+      </div>
+      <div>
+        <input type="radio" name="race" id="full" value="full" />
         <label for="full">Full Marathon</label>
-    </div>
-
+      </div>
+      <div>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
         <label for="pass">Password:</label>
-        <input type="password" name="pass" id="pass" />
-        <br />
-        <label for="age">Select Age Group:</label>
-        <select name="age" id="age">
+        <input type="password" name="pass" id="pass" required />
+      </div>
+      <div>
+        <label for="division">Select Age Group:</label>
+        <select name="division" id="division">
           <option value="children">under 18</option>
-          <option value="young adult">18-25</option>
-          <option value="adult">26-35</option>
-          <option value="middle">36-45</option>
+          <option value="young adult">18-30</option>
+          <option value="adult">31-50</option>
+          <option value="seniors">51+</option>
         </select>
-      </p>
+      </div>
+      <!-- use alt click in multiple places for multiple cursors  -->
       <button>Register</button>
     </form>
   </body>
