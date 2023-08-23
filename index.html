@@ -18,18 +18,20 @@
         Select a Race:
         <div>
         <!-- id and label the same connects the label to the radio button
-        having the same name will connect all 3 radios so that only 1 may be chosen -->
-        <input type="radio" name="race" id="funRun" />
+        having the same name will connect all 3 radios so that only 1 may be chosen 
+    ALSO IMPORTANT, WE MUST SET THE VALUE SO THAT IT IS SENT TO A SERVER (HYPOTHETICALLY)-->
+        <input type="radio" name="race" id="funRun" value="funRun" />
         <label for="funRun">Fun Run 5k</label>
     </div>
     <div>
-        <input type="radio" name="race" id="half" />
+        <input type="radio" name="race" id="half" value="half" />
         <label for="half">Half Marathon</label>
     </div>
     <div>
-        <input type="radio" name="race" id="full" />
+        <input type="radio" name="race" id="full" value="full"/>
         <label for="full">Full Marathon</label>
     </div>
+
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" />
         <label for="pass">Password:</label>
